@@ -1,0 +1,187 @@
+/*
+Theme Name: MovieSpot
+Description: A custom WordPress theme for movie-related websites.
+Version: 0.0.1
+Author: Filip Dimic
+Tags: movie, cinema, film
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Set the background and font colors */
+body {
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.movie-list,
+.movie-filters {
+    max-width: 1260px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Style the form container */
+.movie-filters form {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+
+/* Style the form elements */
+.movie-filters label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.movie-filters select,
+.movie-filters button {
+    background-color: #2d2d2d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 5px;
+}
+
+.movie-filters select:focus,
+.movie-filters button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fff;
+}
+
+/* Style the form elements on hover */
+.movie-filters select:hover,
+.movie-filters button:hover {
+    background-color: #3d3d3d;
+}
+
+/* Style the form elements on focus */
+.movie-filters select:focus,
+.movie-filters button:focus {
+    background-color: #4d4d4d;
+}
+
+/* Style the form button */
+.movie-filters button {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.movie-filters button:hover {
+    background-color: #0062cc;
+}
+
+/* Style the form error message */
+.movie-filters .error {
+    color: #ff0000;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Style the movie list container */
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 25px;
+    margin-top: 20px;
+}
+
+/* Style the movie articles */
+.movie {
+    background-color: #2d2d2d;
+    color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.movie h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+    min-height: 70px;
+}
+
+.movie-meta {
+    margin-bottom: 10px;
+}
+
+.movie-meta div {
+    margin-bottom: 5px;
+}
+
+.movie-meta span {
+    font-weight: bold;
+}
+
+.movie-excerpt {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Style the movie ratings */
+.movie-rating {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+/* Style the movie genres */
+.movie-genre {
+    display: block;
+}
+
+/* Style the movie release years */
+.movie-release-year {
+    display: block;
+}
+
+/* Style the movie publishers */
+.movie-publisher {
+    display: block;
+}
+
+/* Style the movie article hover and focus effects */
+.movie:hover,
+.movie:focus {
+    background-color: #3d3d3d;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Style the movie article h2 hover and focus effects */
+.movie h2:hover,
+.movie h2:focus {
+    color: #007bff;
+}
+
+/* Style the movie article excerpt hover and focus effects */
+.movie-excerpt p:hover,
+.movie-excerpt p:focus {
+    color: #007bff;
+}
+
+/* Style the movie articles for different screen sizes */
+@media (max-width: 768px) {
+    .movie {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
